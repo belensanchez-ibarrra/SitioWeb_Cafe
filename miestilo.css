@@ -1,0 +1,196 @@
+/* ===================================================
+   VARIABLES DE COLOR Y TEMÁTICA BELEN CAFÉ
+   =================================================== */
+:root {
+  --color-brown-primary: #4a2c2a;
+  --color-brown-hover: #371f1e;
+  --color-amber-gold: #d97706;
+  --color-amber-light: #fef3c7;
+  --color-cream-bg: #fdfbf7;
+  --color-cream-card: #f8f4ef;
+  --color-text-dark: #2c211e;
+  --color-text-muted: #6c757d;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--color-text-dark);
+  background-color: #ffffff;
+}
+
+/* ===================================================
+   CLASES DE UTILIDAD PERSONALIZADAS
+   =================================================== */
+.text-brown {
+  color: var(--color-brown-primary) !important;
+}
+
+.text-amber {
+  color: var(--color-amber-gold) !important;
+}
+
+.bg-cream {
+  background-color: var(--color-cream-bg) !important;
+}
+
+.bg-amber {
+  background-color: var(--color-amber-light) !important;
+}
+
+.btn-brown {
+  background-color: var(--color-brown-primary);
+  border-color: var(--color-brown-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-brown:hover, .btn-brown:focus {
+  background-color: var(--color-brown-hover);
+  border-color: var(--color-brown-hover);
+  transform: translateY(-2px);
+}
+
+.btn-outline-brown {
+  color: var(--color-brown-primary);
+  border-color: var(--color-brown-primary);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-brown:hover {
+  background-color: var(--color-brown-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ===================================================
+   NAVEGACIÓN
+   =================================================== */
+.navbar .nav-link {
+  color: var(--color-text-dark);
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-amber-gold);
+}
+
+/* ===================================================
+   HERO / ENCABEZADO
+   =================================================== */
+.hero-section {
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-cream-card) 100%);
+}
+
+.hero-img {
+  max-height: 420px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.02);
+}
+
+/* ===================================================
+   TARJETAS Y CARACTERÍSTICAS
+   =================================================== */
+.feature-card {
+  transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(74, 44, 42, 0.1) !important;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-cream-card);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===================================================
+   GALERÍA / CAROUSEL
+   =================================================== */
+.galeria-img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.bg-dark-glass {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+/* ===================================================
+   TARJETAS DEL MENÚ
+   =================================================== */
+.product-card {
+  transition: transform 0.3s ease, shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.thumb-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 3px solid var(--color-cream-card);
+}
+
+/* ===================================================
+   ACORDEÓN Y CONTACTO
+   =================================================== */
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-cream-card);
+  color: var(--color-brown-primary);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(74, 44, 42, 0.2);
+}
+
+.contact-icon-box {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   FOOTER Y SOCIEDAD
+   =================================================== */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: var(--color-amber-gold);
+  color: #ffffff !important;
+  transform: translateY(-3px);
+}
+
+.tiny-text {
+  font-size: 0.75rem;
+}
